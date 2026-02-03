@@ -369,8 +369,9 @@
 
 
 
-/* MODERN FOOTER STYLES */
-    /* STREAMLINED MODERN FOOTER */
+
+
+/* THREE-COLUMN MODERN FOOTER */
     .site-footer {
       background: #0f172a;
       color: #f8fafc;
@@ -383,25 +384,22 @@
 
     .footer-grid {
       display: grid;
-      grid-template-columns: 1.5fr 1fr; /* Two column balance */
-      gap: 4rem;
+      grid-template-columns: 1.5fr 1fr 1fr; /* Three distinct columns */
+      gap: 2rem;
       margin-bottom: 3rem;
       text-align: left;
     }
 
     .footer-brand h1 {
-      font-size: 1.8rem;
+      font-size: 1.6rem;
       letter-spacing: 3px;
-      margin-bottom: 1.2rem;
+      margin-bottom: 1rem;
       color: #fff;
-      font-weight: 700;
     }
 
     .footer-brand p {
       color: #94a3b8;
-      max-width: 500px;
-      line-height: 1.8;
-      font-size: 1rem;
+      line-height: 1.7;
     }
 
     .footer-heading {
@@ -413,31 +411,20 @@
       font-size: 0.75rem;
     }
 
-    .footer-contact p {
-      margin-bottom: 1rem;
+    .footer-contact p, .footer-support p {
+      margin-bottom: 0.8rem;
       color: #cbd5e1;
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
     }
 
-    .footer-contact a {
+    .footer-contact a, .footer-support a {
       color: #3b82f6;
       text-decoration: none;
       transition: color 0.2s;
     }
 
-    .footer-contact a:hover {
+    .footer-contact a:hover, .footer-support a:hover {
       color: #60a5fa;
       text-decoration: underline;
-    }
-
-    .incubation-box {
-      background: rgba(255,255,255,0.03);
-      padding: 1.5rem;
-      border-radius: 12px;
-      border: 1px solid rgba(255,255,255,0.08);
-      margin-top: 1.5rem;
     }
 
     .footer-bottom {
@@ -452,19 +439,15 @@
       background: #0a0a0a;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
       .footer-grid {
         grid-template-columns: 1fr;
-        gap: 3rem;
         text-align: center;
-      }
-      .footer-brand p {
-        margin: 0 auto;
-      }
-      .footer-contact p {
-        justify-content: center;
+        gap: 3rem;
       }
     }
+
+
 
 
 
@@ -944,7 +927,7 @@ body.night-mode .modal-name {
         <a href="https://openreview.net/pdf?id=HGSjlgFodQ" target="_blank" class="btn-pub btn-paper">📄 Paper</a>
         <a href="https://github.com/yunusa2k2/iiANET" target="_blank" class="btn-pub btn-github">💻 GitHub</a>
         <a href="https://www.youtube.com/watch?v=_Tq3Z187_VA&list=LL" target="_blank" class="btn-pub btn-youtube">▶️ Presentation</a>
-        <a href="/ppt/tmlr_iiANET.ppt" target="_blank" class="btn-pub btn-ppt">📊 PPT</a>
+        <a href="/ppt/tmlr_iiANET.pptx" target="_blank" class="btn-pub btn-ppt">📊 PPT</a>
       </div>
     </div>
     <div class="pub-image">
@@ -1006,39 +989,39 @@ body.night-mode .modal-name {
   </section>
 
 
+
 <footer class="site-footer">
   <div class="container footer-grid">
     
     <div class="footer-brand">
       <h1>NΞWЯΛLΛB</h1>
       <p>
-<p>Advancing AI for low-resource 
-and underrepresented environments 
-through physically-grounded dynamical models.</p>
+	Advancing AI for low-resource 
+	and underrepresented environments 
+	through physically-grounded dynamical models.
+      </p>
     </div>
 
     <div class="footer-contact">
-      <div class="footer-heading">Get in Touch</div>
-      <p>📍 Amsterdam, The Netherlands</p>
-      <p>✉️ <a href="mailto:founder@newralab.org">founder[at]newralab[dot]org</a></p>
-      
-      <div class="incubation-box">
-        <div class="footer-heading" style="margin-bottom: 0.5rem; color: #94a3b8;">Strategic Partner</div>
-        <p style="margin-bottom: 0; font-size: 0.9rem;">
-          Company registration & incubation supported by:<br>
-          <a href="https://netherlandsinnovationcenter.com/" target="_blank" rel="noopener noreferrer">
-            Netherlands Innovation Center (NIC)
-          </a>
-        </p>
-      </div>
+      <div class="footer-heading">Contact</div>
+      <p>📍 10th Floor, Building D, Sino-Dutch Innovation Port, Xiangcheng District,
+Suzhou, Jiangsu, China</p>
+      <p>✉️ <a href="&#102;&#111;&#117;&#110;&#100;&#101;&#114;&#64;&#110;&#101;&#119;&#114;&#97;&#108;&#97;&#98;&#46;&#111;&#114;&#103;">
+        founder&#64;newralab&#46;org
+      </a></p>
     </div>
+
+    <div class="footer-support">
+      <div class="footer-heading">Supported by:</div>
+      <p>Netherlands Innovation Center (NIC)</p>
+    </div>
+
   </div>
 
   <div class="footer-bottom container">
     <p>© 2026 NewraLab (苏州拟界智能科技有限公司). All rights reserved.</p>
   </div>
 </footer>
-
 
 
 
