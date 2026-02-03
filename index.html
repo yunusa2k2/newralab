@@ -365,6 +365,114 @@
     }
 
 
+
+
+
+
+/* MODERN FOOTER STYLES */
+    /* STREAMLINED MODERN FOOTER */
+    .site-footer {
+      background: #0f172a;
+      color: #f8fafc;
+      padding: 4rem 0 2rem 0;
+      margin-top: 6rem;
+      transition: background 0.3s ease;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(59, 130, 246, 0.2);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr; /* Two column balance */
+      gap: 4rem;
+      margin-bottom: 3rem;
+      text-align: left;
+    }
+
+    .footer-brand h1 {
+      font-size: 1.8rem;
+      letter-spacing: 3px;
+      margin-bottom: 1.2rem;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .footer-brand p {
+      color: #94a3b8;
+      max-width: 500px;
+      line-height: 1.8;
+      font-size: 1rem;
+    }
+
+    .footer-heading {
+      color: #3b82f6;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+      margin-bottom: 1.2rem;
+      font-size: 0.75rem;
+    }
+
+    .footer-contact p {
+      margin-bottom: 1rem;
+      color: #cbd5e1;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .footer-contact a {
+      color: #3b82f6;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .footer-contact a:hover {
+      color: #60a5fa;
+      text-decoration: underline;
+    }
+
+    .incubation-box {
+      background: rgba(255,255,255,0.03);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px solid rgba(255,255,255,0.08);
+      margin-top: 1.5rem;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.05);
+      padding-top: 2rem;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.8rem;
+    }
+
+    body.night-mode .site-footer {
+      background: #0a0a0a;
+    }
+
+    @media (max-width: 768px) {
+      .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+      }
+      .footer-brand p {
+        margin: 0 auto;
+      }
+      .footer-contact p {
+        justify-content: center;
+      }
+    }
+
+
+
+
+
+
+
+
 /* Update your existing section style or add this */
 section {
   padding: 4rem 2rem;
@@ -687,7 +795,7 @@ body.night-mode .modal-name {
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#news">News</a></li> 
-   <li><a href="#projects">Projects</a></li>
+   <li><a href="#projects">Product</a></li>
 <li><a href="#research">Research</a></li>
     <li><a href="#publications">Publications</a></li>
     <li><a href="#team">Team</a></li>
@@ -756,12 +864,12 @@ body.night-mode .modal-name {
 
 
 <section id="projects">
-  <h2>Projects</h2>
+  <h2>Products</h2>
   <div class="project-grid">
     <div class="project-card">
       <div class="project-info">
         <span class="project-tag">Open Source</span>
-                <span class="project-tag">Beta testing</span>
+                <span class="project-tag">Ongoing</span>
         <h3>Gamba-Vision Suite</h3>
         <p>A collection of lightweight visual backbone models designed for deployment on resource constrained devices in regions with limited cloud access.</p>
         <div class="pub-links">
@@ -817,9 +925,9 @@ body.night-mode .modal-name {
       <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #666;">Distilling cross-modal capabilities into linear-complexity architectures for edge devices.</p>
       <div class="pub-links">
         <a href="https://openaccess.thecvf.com/content/ICCV2025W/ECLR/papers/Haruna_Tiny-vGamba_Distilling_Large_Vision-Language_Knowledge_from_CLIP_into_a_Lightweight_ICCVW_2025_paper.pdf" target="_blank" class="btn-pub btn-paper">📄 Paper</a>
-        <a href="#" target="_blank" class="btn-pub btn-github">💻 GitHub</a>
-        <a href="#" target="_blank" class="btn-pub btn-youtube">▶️ Presentation</a>
-        <a href="#" target="_blank" class="btn-pub btn-ppt">📊 PPT</a>
+        <a href="https://github.com/yunusa2k2/tiny_vGamba" target="_blank" class="btn-pub btn-github">💻 GitHub</a>
+        <a href="" target="_blank" class="btn-pub btn-youtube">▶️ Presentation</a>
+        <a href="ppt/iccv_tiny_vgamba.pptx" target="_blank" class="btn-pub btn-ppt">📊 PPT</a>
       </div>
     </div>
     <div class="pub-image">
@@ -834,9 +942,9 @@ body.night-mode .modal-name {
       <p style="font-size: 0.9rem; margin-top: 0.5rem; color: #666;">Physically-motivated segmentation models for low-compute environments.</p>
       <div class="pub-links">
         <a href="https://openreview.net/pdf?id=HGSjlgFodQ" target="_blank" class="btn-pub btn-paper">📄 Paper</a>
-        <a href="#" target="_blank" class="btn-pub btn-github">💻 GitHub</a>
+        <a href="https://github.com/yunusa2k2/iiANET" target="_blank" class="btn-pub btn-github">💻 GitHub</a>
         <a href="https://www.youtube.com/watch?v=_Tq3Z187_VA&list=LL" target="_blank" class="btn-pub btn-youtube">▶️ Presentation</a>
-        <a href="#" target="_blank" class="btn-pub btn-ppt">📊 PPT</a>
+        <a href="/ppt/tmlr_iiANET.ppt" target="_blank" class="btn-pub btn-ppt">📊 PPT</a>
       </div>
     </div>
     <div class="pub-image">
@@ -866,7 +974,8 @@ body.night-mode .modal-name {
         <p>NLP, Sentiment Analysis</p>
       </div>
 
-      <div class="card">
+      <div class="card team-card" data-bio="Hashim Amir Bashir is the Business Lead at NewraLab, specializing in the intersection of AI-driven technology and commercial execution. An engineer by training with a Global MBA from Tsinghua University, Amir has a proven track record of scaling revenue notably growing ventures from $3M to $8M in monthly turnover. With deep roots in the Global South and experience spanning Transsion Holdings to AI-enabled mining, he blends technical R&D with cross-border strategy. Multilingual in English, Chinese, and Hausa, Amir is a frequent speaker on the future of innovation in emerging economies.
+">
         <img src="amir.jpg" alt="Amir Hashim">
         <h3>Amir Hashim</h3>
         <p>Business Lead</p>
@@ -896,9 +1005,42 @@ body.night-mode .modal-name {
     </form>
   </section>
 
-<footer>
-  <p>© 2026 NewraLab. All rights reserved.</p>
+
+<footer class="site-footer">
+  <div class="container footer-grid">
+    
+    <div class="footer-brand">
+      <h1>NΞWЯΛLΛB</h1>
+      <p>
+<p>Advancing AI for low-resource 
+and underrepresented environments 
+through physically-grounded dynamical models.</p>
+    </div>
+
+    <div class="footer-contact">
+      <div class="footer-heading">Get in Touch</div>
+      <p>📍 Amsterdam, The Netherlands</p>
+      <p>✉️ <a href="mailto:founder@newralab.org">founder[at]newralab[dot]org</a></p>
+      
+      <div class="incubation-box">
+        <div class="footer-heading" style="margin-bottom: 0.5rem; color: #94a3b8;">Strategic Partner</div>
+        <p style="margin-bottom: 0; font-size: 0.9rem;">
+          Company registration & incubation supported by:<br>
+          <a href="https://netherlandsinnovationcenter.com/" target="_blank" rel="noopener noreferrer">
+            Netherlands Innovation Center (NIC)
+          </a>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom container">
+    <p>© 2026 NewraLab (苏州拟界智能科技有限公司). All rights reserved.</p>
+  </div>
 </footer>
+
+
+
 
   <script>
     const themeToggle = document.querySelector('.theme-toggle');
